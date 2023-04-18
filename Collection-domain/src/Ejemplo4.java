@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import modelo.Curso;
+
 public class Ejemplo4 {
 
 	public static void main(String[] args) {
