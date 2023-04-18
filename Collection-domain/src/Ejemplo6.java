@@ -12,16 +12,16 @@ public class Ejemplo6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 Curso curso1 = new Curso("java", 30);
-		 curso1.addClase(new Aula("Arraylis"));
-		 curso1.addClase(new Aula("linkedList"));
-		 curso1.addClase(new Aula("List"));
+		 curso1.addAula(new Aula("Arraylis"));
+		 curso1.addAula(new Aula("linkedList"));
+		 curso1.addAula(new Aula("List"));
 		 
 		 
 		 ArrayList<Curso>cursos = new ArrayList<>();
 		 
 		cursos.add(curso1);
 		
-		System.out.println(cursos.get(0).getClaseList());
+		System.out.println(cursos.get(0).getAulaList());
 		System.out.println(curso1);
 	}
 

@@ -1,12 +1,13 @@
 package modelo;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class Curso {
 	private String nombre;
 	private int tiempo;
-	private List<Aula>claseList = new ArrayList<>();
+	private List<Aula>AluraList = new ArrayList<>();
 	
 	public Curso(String nombre, int tiempo) {
 		super();
@@ -17,7 +18,7 @@ public class Curso {
 		super();
 		this.nombre = nombre;
 		this.tiempo = tiempo;
-		this.claseList = claselist;
+		this.AluraList = claselist;
 	}
 	
 	
@@ -34,15 +35,15 @@ public class Curso {
 		this.tiempo = tiempo;
 	}
 	
-	public void addClase(Aula clase) {
-		this.claseList.add(clase);
+	public void addAula(Aula aula) {		//manera para encapsular algo que no quieres que sea accedido por otro medio, en este caso "aulalist.add"
+		this.AluraList.add(aula);
 	}
 	
-	public List<Aula> getClaseList() {
-		return claseList;
+	public List<Aula> getAulaList() {
+		return Collections.unmodifiableList(AluraList);
 	}
-	public void setClaseList(List<Aula> claseList) {
-		this.claseList = claseList;
+	public void setAulaList(List<Aula> claseList) {
+		this.AluraList = claseList;
 	}
 	@Override
 	public String toString() {
