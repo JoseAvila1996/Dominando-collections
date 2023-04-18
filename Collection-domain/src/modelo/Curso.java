@@ -6,14 +6,14 @@ import java.util.List;
 public class Curso {
 	private String nombre;
 	private int tiempo;
-	private List<Clase>claseList = new ArrayList<>();
+	private List<Aula>claseList = new ArrayList<>();
 	
 	public Curso(String nombre, int tiempo) {
 		super();
 		this.nombre = nombre;
 		this.tiempo = tiempo;
 	}
-	public Curso(String nombre, int tiempo, List<Clase>claselist) {
+	public Curso(String nombre, int tiempo, List<Aula>claselist) {
 		super();
 		this.nombre = nombre;
 		this.tiempo = tiempo;
@@ -34,6 +34,16 @@ public class Curso {
 		this.tiempo = tiempo;
 	}
 	
+	public void addClase(Aula clase) {
+		this.claseList.add(clase);
+	}
+	
+	public List<Aula> getClaseList() {
+		return claseList;
+	}
+	public void setClaseList(List<Aula> claseList) {
+		this.claseList = claseList;
+	}
 	@Override
 	public String toString() {
 		return this.nombre;
