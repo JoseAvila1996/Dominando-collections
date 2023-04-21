@@ -1,11 +1,10 @@
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Ejemplo12 {
+public class Ejemplo13 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -28,18 +27,9 @@ public class Ejemplo12 {
 		 listaAlumnos.add(variable7);
 		 listaAlumnos.add(variable8);
 		 
-		 //listaAlumnos.forEach(alumno ->{
-			// System.out.println(alumno);
-		 //});
-		 
-		 boolean valid = listaAlumnos.contains("Jose sanches");
-		 String max = listaAlumnos.stream().max(Comparator.comparingInt(String::length)).get();
-		 listaAlumnos.removeIf(alumno -> "Luis mendez".equalsIgnoreCase(alumno));
-		 
-		 listaAlumnos.forEach(alumnos -> {
-			 System.out.println(alumnos);
+		 listaAlumnos.forEach(alumno ->{
+			 System.out.println(alumno);
 		 });
-		 
 		 
 	}
 
